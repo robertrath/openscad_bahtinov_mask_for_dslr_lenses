@@ -45,31 +45,34 @@ sigmaArt50mm                = 0;
 canon100mmF28L              = 1;
 canon70to20mmF28L2          = 2;
 sigmaSport150to600mm        = 3;
-optex6Inch                  = 4;
+optex6InchExternalFit       = 4;
+optex6InchInternalFit       = 5;
 
 // Uncomment One Lens To Render 
-Lens = sigmaArt50mm;
+//Lens = sigmaArt50mm;
 //Lens = canon100mmF28L;
 //Lens = canon70to20mmF28L2;
 //Lens = sigmaSport150to600mm;
-Lens = optex6Inch;
+//Lens = optex6InchExternalFit;
+Lens = optex6InchInternalFit;
 
 // Attributes Index 
-outerDiameterIndex          = 0; // The physical diameter of the lens.
-apertureIndex               = 1; // The aperture diameter at the lens extremity.
-gapIndex                    = 2; // The width of the gaps and the bars.
-ringHeightIndex             = 3; // The height of the retaining ring. 
-ringThicknessIndex          = 4; // The thickness of the retaining ring.
+outerDiameterIndex           = 0; // The physical diameter of the lens.
+apertureIndex                = 1; // The aperture diameter at the lens extremity.
+gapIndex                     = 2; // The width of the gaps and the bars.
+ringHeightIndex              = 3; // The height of the retaining ring. 
+ringThicknessIndex           = 4; // The thickness of the retaining ring.
 
-// Lens Details               [diameter, aperture, slot, height, ring]
-sigmaArt50mmDetails         = [85.3,     74.0,     0.5,  15.0,   1.6 ];
-canon100mmF28LDetails       = [76.7,     50.0,     0.5,  15.0,   1.6 ];
-canon70to20mmF28L2Details   = [87.9,     76.0,     1.0,  15.0,   1.6 ];
-sigmaSport150to600mmDetails = [117.9,    96.0,     1.5,  15.0,   1.6 ];
-optex6InchDetails           = [183.8,    170.0,    3.0,  32.0,   2.0 ];
+// Lens Details                [diameter, aperture, slot, height, ring]
+sigmaArt50mmDetails          = [85.3,     74.0,     0.5,  15.0,   1.6 ];
+canon100mmF28LDetails        = [76.7,     50.0,     0.5,  15.0,   1.6 ];
+canon70to20mmF28L2Details    = [87.9,     76.0,     1.0,  15.0,   1.6 ];
+sigmaSport150to600mmDetails  = [117.9,    96.0,     1.5,  15.0,   1.6 ];
+optex6InchExternalFitDetails = [183.8,    170.0,    3.0,  32.0,   2.0 ];
+optex6InchInternalFitDetails = [167.8,    160.0,    3.0,  15.0,   2.0 ];
 
 // Collection Of All Lenses 
-Lenses = [sigmaArt50mmDetails, canon100mmF28LDetails, canon70to20mmF28L2Details, sigmaSport150to600mmDetails, optex6InchDetails];
+Lenses = [sigmaArt50mmDetails, canon100mmF28LDetails, canon70to20mmF28L2Details, sigmaSport150to600mmDetails, optex6InchExternalFitDetails, optex6InchInternalFitDetails];
 
 // Interfere with the lens diameter in order to grip the lens.
 ringTabInterference = 0.5;
