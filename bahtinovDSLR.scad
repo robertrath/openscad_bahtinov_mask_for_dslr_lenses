@@ -47,14 +47,17 @@ canon70to20mmF28L2          = 2;
 sigmaSport150to600mm        = 3;
 optex6InchExternalFit       = 4;
 optex6InchInternalFit       = 5;
+tamron18to400mm             = 6;
 
-// Uncomment One Lens To Render 
+// Uncomment One Lens In the Following Set To Render
+
 //Lens = sigmaArt50mm;
 //Lens = canon100mmF28L;
 //Lens = canon70to20mmF28L2;
 //Lens = sigmaSport150to600mm;
 //Lens = optex6InchExternalFit;
-Lens = optex6InchInternalFit;
+//Lens = optex6InchInternalFit;
+Lens = tamron18to400mm;
 
 // Attributes Index 
 outerDiameterIndex           = 0; // The physical diameter of the lens.
@@ -70,9 +73,16 @@ canon70to20mmF28L2Details    = [87.9,     76.0,     1.0,  15.0,   1.6 ];
 sigmaSport150to600mmDetails  = [117.9,    96.0,     1.5,  15.0,   1.6 ];
 optex6InchExternalFitDetails = [183.8,    170.0,    3.0,  32.0,   2.0 ];
 optex6InchInternalFitDetails = [167.8,    160.0,    3.0,  15.0,   2.0 ];
+tamron18to400mmDetails       = [79.1,     64.0,     1.5,  15.0,   1.6 ]; // Provided by César Pariona, https://www.thingiverse.com/alukardgt/about
 
-// Collection Of All Lenses 
-Lenses = [sigmaArt50mmDetails, canon100mmF28LDetails, canon70to20mmF28L2Details, sigmaSport150to600mmDetails, optex6InchExternalFitDetails, optex6InchInternalFitDetails];
+// Collection Of All Lenses (must match Lens Details entries)
+Lenses = [sigmaArt50mmDetails,
+          canon100mmF28LDetails,
+          canon70to20mmF28L2Details,
+          sigmaSport150to600mmDetails,
+          optex6InchExternalFitDetails,
+          optex6InchInternalFitDetails,
+          tamron18to400mmDetails];
 
 // Interfere with the lens diameter in order to grip the lens.
 ringTabInterference = 0.5;
