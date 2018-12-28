@@ -45,36 +45,37 @@ sigmaArt50mm                = 0;
 canon100mmF28L              = 1;
 canon70to20mmF28L2          = 2;
 sigmaSport150to600mm        = 3;
+optex6Inch                  = 4;
 
 // Uncomment One Lens To Render 
 Lens = sigmaArt50mm;
 //Lens = canon100mmF28L;
 //Lens = canon70to20mmF28L2;
 //Lens = sigmaSport150to600mm;
+Lens = optex6Inch;
 
 // Attributes Index 
 outerDiameterIndex          = 0; // The physical diameter of the lens.
 apertureIndex               = 1; // The aperture diameter at the lens extremity.
 gapIndex                    = 2; // The width of the gaps and the bars.
 ringHeightIndex             = 3; // The height of the retaining ring. 
+ringThicknessIndex          = 4; // The thickness of the retaining ring.
 
-// Lens Details               [diameter, aperture, slot, height]
-sigmaArt50mmDetails         = [85.3,     74.0,     0.5,  15.0  ];
-canon100mmF28LDetails       = [76.7,     50.0,     0.5,  15.0  ];
-canon70to20mmF28L2Details   = [87.9,     76.0,     1.0,  15.0  ];
-sigmaSport150to600mmDetails = [117.9,    96.0,     1.5,  15.0  ];
+// Lens Details               [diameter, aperture, slot, height, ring]
+sigmaArt50mmDetails         = [85.3,     74.0,     0.5,  15.0,   1.6 ];
+canon100mmF28LDetails       = [76.7,     50.0,     0.5,  15.0,   1.6 ];
+canon70to20mmF28L2Details   = [87.9,     76.0,     1.0,  15.0,   1.6 ];
+sigmaSport150to600mmDetails = [117.9,    96.0,     1.5,  15.0,   1.6 ];
+optex6InchDetails           = [183.8,    170.0,    3.0,  32.0,   2.0 ];
 
 // Collection Of All Lenses 
-Lenses = [sigmaArt50mmDetails, canon100mmF28LDetails, canon70to20mmF28L2Details, sigmaSport150to600mmDetails];
+Lenses = [sigmaArt50mmDetails, canon100mmF28LDetails, canon70to20mmF28L2Details, sigmaSport150to600mmDetails, optex6InchDetails];
 
 // Interfere with the lens diameter in order to grip the lens.
 ringTabInterference = 0.5;
 
 // The diameter of the secondary mirror holder. If no secondary then set to 0.
 centerHoleDiameter = 0;
-
-// The thickness of the retaining ring in mm.
-ringThickness = 1.6;
 
 // The number of ring pieces.
 ringPieces = 3; 
@@ -90,6 +91,7 @@ outerDiameter = Lenses[Lens][outerDiameterIndex]-ringTabInterference;
 aperture      = Lenses[Lens][apertureIndex];
 gap           = Lenses[Lens][gapIndex];
 ringHeight    = Lenses[Lens][ringHeightIndex];
+ringThickness = Lenses[Lens][ringThicknessIndex];
 
 /* create a series of bars covering roughly one half of the
  * scope aperture. Located in the +X side.

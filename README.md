@@ -14,3 +14,4 @@ Sigma Art 50mm f/1.4
 Canon 100mm Macro f/2.8L
 Canon 7-200 f/2.8L II
 Sigma Sport 150-600mm f/5-6.3
+Optex 6 Inch Telescope
